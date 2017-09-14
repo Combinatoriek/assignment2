@@ -40,7 +40,7 @@ There are lots of different possible scenarios. We can enumerate them and add th
 	\texttt{GGGLLL} & $C(6, 3) = 20$\\
 	\texttt{GGBBBB} & $C(6, 2) * C(4, 4) = 15$\\
 	\texttt{GGBBBL} & $C(6, 2) * C(4, 3) = 60$\\
-	\texttt{GGBBLL} & $C(6, 2) * C(4, 2)$\\
+	\texttt{GGBBLL} & $C(6, 2) * C(4, 2) = 90$\\
 	\texttt{GGBLLL} & $C(6, 2) * C(4, 1) = 60$\\
 	\texttt{GSSSSS} & $C(6, 1) * C(5, 5) = 6$\\
 	\texttt{GSSSSL} & $C(6, 1) * C(5, 4) = 30$\\
@@ -48,6 +48,8 @@ There are lots of different possible scenarios. We can enumerate them and add th
 	\texttt{GSSLLL} & $C(6, 1) * C(5, 2) = 60$\\
 	\texttt{GSBLLL} & $C(6, 1) * C(5, 1) * C(4, 1) = 120$\\
 \end{tabular}
+
+Total possibilities to award medals: $1 + 6 + 15 + 20 + 15 + 60 + 90 + 60 + 6 + 30 + 60 + 60 + 120 = 543$.
 
 \section*{12}
 Pascal's identity says: $=$ so we must add the numbers above together to get the numbers in the next row.
