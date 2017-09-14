@@ -50,7 +50,12 @@ The next row is $1\ 9\ 36\ 84\ 126\ 126\ 84\ 36\ 9\ 1$.
 	Both methods of choosing elements are equivalent.
 
 	\item %b
-	$C(n, r) * C(r, k)\\
+	$\begin{pmatrix}
+		n \\ r
+	\end{pmatrix}
+	* \begin{pmatrix}
+		r \\ k
+	\end{pmatrix}\\
 	= \dfrac{n!}{r! (n - r)!} * \dfrac{r!}{k! (r - k)!}\\
 	= \dfrac{n! r!}{r! (n - r)! k! (r - k)!}\\
 	= \dfrac{n!}{(n - r)! k! (r - k)!}\\
@@ -58,7 +63,12 @@ The next row is $1\ 9\ 36\ 84\ 126\ 126\ 84\ 36\ 9\ 1$.
 	= \dfrac{n! (n - k)!}{k! (n - k)! (r - k)! (n - r)!}\\
 	= \dfrac{n!}{k! (n - k)!} * \dfrac{(n - k)!}{(r - k)! (n - r)!}\\
 	= \dfrac{n!}{k! (n - k)!} * \dfrac{(n - k)!}{(r - k)! (n - k - r + k)!}\\
-	= C(n, k) * C(n - k, r - k)$
+	= \begin{pmatrix}
+		n \\ k
+	\end{pmatrix}
+	* \begin{pmatrix}
+		n - k \\ r - k
+	\end{pmatrix}$
 \end{enumerate}
 
 \section*{14}
