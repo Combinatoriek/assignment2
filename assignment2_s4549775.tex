@@ -18,6 +18,16 @@
 \maketitle
 
 \section{10}
+If the committee needs to contain more women than men (which is sexist btw), and it consists of 6 members, then it must contain 4, 5, or 6 women.
+
+\begin{tabular}{r|l}
+	women & possibilities\\\hline
+	4 & $C(15, 4) * C(10, 2)$\\
+	5 & $C(15, 5) * C(10, 1)$\\
+	6 & $C(15, 6) * C(10, 0)$
+\end{tabular}
+
+Total number of ways to form the committee: $\sum_{i=4}^{6} C(15, i) * C(10, 6 - i) = $
 
 \section{11}
 
