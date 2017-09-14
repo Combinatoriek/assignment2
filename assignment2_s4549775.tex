@@ -112,6 +112,13 @@ We can conclude that $\forall n \in \mathbb{N}, (1 + \sqrt{2})^n + (1 + \sqrt{2}
 \begin{enumerate}[a]
 	\item %a
 	\item %b
+	If you calculate $\sum_{i = 0}^{n} \begin{pmatrix}
+		n \\ i
+	\end{pmatrix}$ you are calculating and summing the sizes of all possible subsets. We know that the power set $\mathcal{P}$ is the set of all subsets. We also know that the size of $\mathcal{P}$ is $2^n$ because for every element in the set, there are 2 possibilities: either it is included or it isn't.
+
+	Thus we can conclude that $\sum_{i = 0}^{n} \begin{pmatrix}
+		n \\ i
+	\end{pmatrix} = | \mathcal{P} | = 2^n$.
 	\item %c
 \end{enumerate}
 
