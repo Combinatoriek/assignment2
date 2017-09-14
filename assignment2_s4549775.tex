@@ -42,6 +42,15 @@ The next row is $1\ 9\ 36\ 84\ 126\ 126\ 84\ 36\ 9\ 1$.
 \begin{enumerate}[a]
 	\item %a
 	\item %b
+	$C(n, r) * C(r, k)\\
+	= \dfrac{n!}{r! (n - r)!} * \dfrac{r!}{k! (r - k)!}\\
+	= \dfrac{n! r!}{r! (n - r)! k! (r - k)!}\\
+	= \dfrac{n!}{(n - r)! k! (r - k)!}\\
+	= \dfrac{n!}{k! (r - k)! (n - r)!}\\
+	= \dfrac{n! (n - k)!}{k! (n - k)! (r - k)! (n - r)!}\\
+	= \dfrac{n!}{k! (n - k)!} * \dfrac{(n - k)!}{(r - k)! (n - r)!}\\
+	= \dfrac{n!}{k! (n - k)!} * \dfrac{(n - k)!}{(r - k)! (n - k - r + k)!}\\
+	= C(n, k) * C(n - k, r - k)$
 \end{enumerate}
 
 \section*{14}
