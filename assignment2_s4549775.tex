@@ -55,7 +55,15 @@ There are lots of different possible scenarios. We can enumerate them and add th
 Total possibilities to award medals: $1 + 6 + 15 + 20 + 15 + 60 + 90 + 60 + 6 + 30 + 60 + 60 + 30 + 90 + 90 + 120 = 753$.
 
 \section*{12}
-Pascal's identity says: $=$ so we must add the numbers above together to get the numbers in the next row.
+Pascal's identity says: $\begin{pmatrix}
+	n \\ k
+\end{pmatrix}
+= \begin{pmatrix}
+	n - 1 \\ k - 1
+\end{pmatrix}
++ \begin{pmatrix}
+	n - 1 \\ k
+\end{pmatrix}$ so we must add the numbers above together to get the numbers in the next row.
 
 $0 + 1 = 1$, $1 + 8 = 9$, $8 + 28 = 36$, $28 + 56 = 84$, $56 + 70 = 126$, $70 + 56 = 126$, $56 + 28 = 84$, $28 + 8 = 36$, $8 + 1 = 9$, $1 + 0 = 1$
 
