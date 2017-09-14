@@ -41,6 +41,14 @@ The next row is $1\ 9\ 36\ 84\ 126\ 126\ 84\ 36\ 9\ 1$.
 \section*{13}
 \begin{enumerate}[a]
 	\item %a
+	In the first case you choose $r$ elements out of a set of $n$ elements, next you choose $k$ elements from the set you chose in step one.\\
+	In the end you are left with a pile of $k$ elements that were chosen in step 2, and a pile of $r - k$ elements, that were not chosen in step 2.
+
+	The second method is a bit more direct. You immediately choose $k$ elements from a set of $n$ elements. This is the same as the first pile from method one. Now you are left with $n - k$ elements, of which you choose $r - k$ to match the pile that you chose in step 1 of method 1, but that wasn't chosen in step 2.\\
+	In the end you are again left with two piles of identical sizes as in method 1.
+
+	Both methods of choosing elements are equivalent.
+
 	\item %b
 	$C(n, r) * C(r, k)\\
 	= \dfrac{n!}{r! (n - r)!} * \dfrac{r!}{k! (r - k)!}\\
